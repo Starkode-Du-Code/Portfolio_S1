@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stark Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Stark Kassa</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">A propos</a></li>
+          <li><a href="#experience">Expérience</a></li>
+          <li><a href="#projects">Projets</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Stark Kassa</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">A propos</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Expérience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projets</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/2.png" alt="Stark Kassa profile picture">
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello I'm</p>
+        <h1 class="title">Stark Kassa</h1>
+        <p class="section__text__p2">Backend Développeur</p>
+        <div class="btn-container">
+          <button 
+            class="btn btn-color-2" 
+            onclick="window.open('./assets/CV-Stark.pdf')"
+          >
+            Télécharger CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Info Contact
+          </button>
+        </div>
+        <div id="socials-container">
+          <img 
+            src="./assets/linkedin.png"
+            alt="Mon Profile LinkedIn" 
+            class="icon" 
+            onclick="location.href='https://www.linkedin.com/in/stark-kassa/'"
+          />
+          <img 
+            src="./assets/github.png"
+            alt="Mon Profile Github" 
+            class="icon" 
+            onclick="location.href='https://github.com/Starkode-Du-Code'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">En savoir plus</p>
+      <h1 class="title">À propos de moi</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img 
+            src="./assets/1.png" 
+            alt="Photo de Profile" 
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img 
+                src="./assets/experience.png" 
+                alt="experience icon"
+                class="icon"
+                />
+                <h1>Expérience</h1>
+                <p>1+ Années (2020-2022) <br /><small><strong>Full-Stack Développeur/Data Ingénieur</strong></small></p>
+            </div>
+            <div class="details-container">
+              <img 
+                src="./assets/education.png" 
+                alt="éducation icon"
+                class="icon"
+                />
+                <h1>Formation</h1>
+                <p>Bachelor Concepteur Développeur d’Applications <br />Multimedia-development project manager </p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Étudiant passionné par la tech, je suis un véritable touche-à-tout. Qu’il s’agisse de développer des applications, analyser des données ou tester de nouvelles technologies, je suis toujours prêt à plonger tête baissée dans le code. Mon parcours m’a amené à explorer une variété de domaines, du développement full-stack à l’ingénierie des données, en passant par la cybersécurité et même la gestion de projets multimédias. J'adore apprendre de nouvelles compétences et relever des défis ambitieux, le tout avec un enthousiasme contagieux et une bonne dose de créativité.
+               Mon objectif ? Mettre mes compétences au service de projets innovants, tout en continuant à grandir et à m’adapter dans ce monde numérique en constante évolution.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img 
+        src="./assets/arrow.png" 
+        alt="Arrow icon " 
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore Mon</p>
+      <h1 class="title">Expérience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend développement</h2>
+            <div class="article-container">
+              <article>
+                <img 
+                  src="./assets/checkmark.png" 
+                  alt="Experience icon" 
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Basique</p>
+                </div>
+              </article>
+              <article>
+                <img 
+                  src="./assets/checkmark.png" 
+                  alt="Experience icon" 
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Basique</p>
+                </div>
+              </article>
+              <article>
+                <img 
+                  src="./assets/checkmark.png" 
+                  alt="Experience icon" 
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Intermédiaire</p>
+                </div>
+              </article>
+              <article>
+                <img 
+                  src="./assets/checkmark.png" 
+                  alt="Experience icon" 
+                  class="icon"
+                />
+                <div>
+                  <h3>TypeScript</h3>
+                  <p>Intermédiaire</p>
+                </div>
+              </article>
+              <article>
+                <img 
+                  src="./assets/checkmark.png" 
+                  alt="Experience icon" 
+                  class="icon"
+                />
+                <div>
+                  <h3>React</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img 
+                  src="./assets/checkmark.png" 
+                  alt="Experience icon" 
+                  class="icon"
+                />
+                <div>
+                  <h3>Angular</h3>
+                  <p>Basique</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Backend développement</h2>
+            <div class="article-container">
+              <article>
+                <img 
+                  src="./assets/checkmark.png" 
+                  alt="Experience icon" 
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <p>Intermédiaire</p>
+                </div>
+              </article>
+              <article>
+                <img 
+                  src="./assets/checkmark.png" 
+                  alt="Experience icon" 
+                  class="icon"
+                />
+                <div>
+                  <h3>PHP</h3>
+                  <p>Basique</p>
+                </div>
+              </article>
+              <article>
+                <img 
+                  src="./assets/checkmark.png" 
+                  alt="Experience icon" 
+                  class="icon"
+                />
+                <div>
+                  <h3>MySQL</h3>
+                  <p>Basique</p>
+                </div>
+              </article>
+              <article>
+                <img 
+                  src="./assets/checkmark.png" 
+                  alt="Experience icon" 
+                  class="icon"
+                />
+                <div>
+                  <h3>Laravel</h3>
+                  <p>Basique</p>
+                </div>
+              </article>
+              <article>
+                <img 
+                  src="./assets/checkmark.png" 
+                  alt="Experience icon" 
+                  class="icon"
+                />
+                <div>
+                  <h3>MongoDB</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img 
+                  src="./assets/checkmark.png" 
+                  alt="Experience icon" 
+                  class="icon"
+                />
+                <div>
+                  <h3>Git</h3>
+                  <p>Basique</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img 
+        src="./assets/arrow.png" 
+        alt="Arrow icon " 
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Parcourir mes récents</p>
+      <h1 class="title">Projets</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img 
+                src="./assets/project-1.png" 
+                alt="Project 1" 
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title oroject-title">Projet N°1</h2>
+            <div class="btn-container">
+              <button 
+                class="btn btn-color-2 project-btn" 
+                onclick="location.href='https://github.com/Starkode-Du-Code?tab=repositories'"
+              >
+                Github
+              </button>
+              <button 
+                class="btn btn-color-2 project-btn" 
+                onclick="location.href='https://github.com/Starkode-Du-Code?tab=repositories'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img 
+                src="./assets/project-2.png" 
+                alt="Project 1" 
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title oroject-title">Projet N°2</h2>
+            <div class="btn-container">
+              <button 
+                class="btn btn-color-2 project-btn" 
+                onclick="location.href='https://github.com/Starkode-Du-Code?tab=repositories'"
+              >
+                Github
+              </button>
+              <button 
+                class="btn btn-color-2 project-btn" 
+                onclick="location.href='https://github.com/Starkode-Du-Code?tab=repositories'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img 
+                src="./assets/project-3.png" 
+                alt="Project 1" 
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title oroject-title">Projet N°3</h2>
+            <div class="btn-container">
+              <button 
+                class="btn btn-color-2 project-btn" 
+                onclick="location.href='https://github.com/Starkode-Du-Code?tab=repositories'"
+              >
+                Github
+              </button>
+              <button 
+                class="btn btn-color-2 project-btn" 
+                onclick="location.href='https://github.com/Starkode-Du-Code?tab=repositories'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img 
+        src="./assets/arrow.png" 
+        alt="Arrow icon " 
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Restez en Contact</p>
+      <h1 class="title">Contactez moi</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img 
+            src="./assets/email.png" 
+            alt="email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:stark.kassa@gmail.com">stark.kassa@gmail.com</a>
+          </p>
+        </div>
+        <div class="contact-info-container">
+          <img 
+            src="./assets/linkedin.png" 
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://github.com/Starkode-Du-Code">LinkedIn</a>
+          </p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">À propos</a></li>
+            <li><a href="#experience">Expérience</a></li>
+            <li><a href="#projects">Projets</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Stark Kassa. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
