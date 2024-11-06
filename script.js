@@ -224,3 +224,22 @@ themeButton.addEventListener('click', () => {
   }
 });
 
+
+function handleSubmit(event) {
+  event.preventDefault(); // Empêche la soumission par défaut
+
+  const form = event.target;
+  
+  // Envoi du formulaire via la fonction Netlify
+  fetch("/", {
+    method: "POST",
+    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    body: new URLSearchParams(new FormData(form)).toString(),
+  })
+  .then(() => {
+    // Afficher le message de succès
+    document.getElementById("success-message").style.display = "block";
+    form.style.display = "none"; // Cacher le formulaire
+  })
+  .catch((error) => alert("Erreur lors de l'envoi du formulaire", error));
+}

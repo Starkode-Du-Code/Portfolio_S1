@@ -475,38 +475,42 @@
       </section>
 
       
-      <!-- CONTACT BOX -->
+      <!-- SECTION FORMULAIRE DE CONTACT -->
       <section class="section" id="contact">
         <div class="top-header">
-            <p class="section__text__p1">Restez en Contact</p>
-            <h1 class="title">Contactez-moi</h1>
+          <p class="section__text__p1">Restez en Contact</p>
+          <h1 class="title">Contactez-moi</h1>
         </div>
         <div class="row">
-            <div class="col">
-                <div class="contact-info">
-                    <h2>Trouvez-moi sur <i class="uil uil-corner-right-down"></i></h2>
-                    <p><i class="uil uil-envelope"></i> Email: stark.kassa@gmail.com</p>
-                    <p><i class="uil uil-phone"></i> Tel: +33 07 89 32 92 57</p>
+          <div class="col">
+            <div class="contact-info">
+              <h2>Trouve moi sur <i class="uil uil-corner-right-down"></i></h2>
+              <p><i class="uil uil-envelope"></i> Email: stark.kassa@gmail.com</p>
+              <p><i class="uil uil-phone"></i> Tel: +33 07 89 32 92 57</p>
+            </div>
+          </div>
+          <div class="col">
+            <!-- FORMULAIRE DE CONTACT -->
+            <div class="form-control">
+              <form name="contact" method="POST" data-netlify="true" onsubmit="handleSubmit(event)">
+                <div class="form-inputs">
+                  <input type="text" class="input-field" name="nom" placeholder="Nom" required>
+                  <input type="email" class="input-field" name="email" placeholder="Email" required>
                 </div>
+                <div class="text-area">
+                  <textarea name="message" placeholder="Message" required></textarea>
+                </div>
+                <div class="form-button">
+                  <button type="submit" class="btn">Envoyer <i class="uil uil-message"></i></button>
+                </div>
+              </form>
             </div>
-            <div class="col">
-                <form class="form-control" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
-                    <input type="hidden" name="form-name" value="contact">
-                    <p style="display: none;">
-                        <label>Ne pas remplir ceci si vous êtes humain: <input name="bot-field"></label>
-                    </p>
-                    <div class="form-inputs">
-                        <input type="text" name="nom" class="input-field" placeholder="Nom" required>
-                        <input type="email" name="email" class="input-field" placeholder="Email" required>
-                    </div>
-                    <div class="text-area">
-                        <textarea name="message" placeholder="Message" required></textarea>
-                    </div>
-                    <div class="form-button">
-                        <button type="submit" class="btn">Envoyer <i class="uil uil-message"></i></button>
-                    </div>
-                </form>
+            <!-- MESSAGE DE SUCCÈS APRÈS SOUMISSION -->
+            <div id="success-message" style="display: none;">
+              <h2>Merci pour votre message !</h2>
+              <p>Votre message a été envoyé avec succès.</p>
             </div>
+          </div>
         </div>
       </section>
 
