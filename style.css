@@ -734,13 +734,6 @@ h3 {
   transform: translateY(0);
 }
 
-
-
-
-
-
-
-
 /* ----- CONTACT BOX ----- */
 .contact-info {
   position: relative;
@@ -774,14 +767,16 @@ h3 {
   font-size: 18px;
 }
 
-.contact-info:hover h2,
-.contact-info:hover p,
-.contact-info:hover i {
+.contact-info:hover {
   color: #777;
   z-index: 2;
 }
 
-/* ----- CONTACT BOX ----- */
+/* ----- SECTION FORMULAIRE DE CONTACT ----- */
+.section#contact {
+  padding: 5em 0;
+}
+
 .contact-info {
   position: relative;
   display: flex;
@@ -790,44 +785,24 @@ h3 {
   align-items: center;
   padding: 20px 30px;
   width: 100%;
-  height: 315px;
   background: var(--btn-bg-color);
   border-radius: 10px;
   box-shadow: 1px 8px 10px 2px var(--shadow-color);
-  overflow: hidden;
   transition: transform 0.3s, background-color 0.3s;
 }
 
 .contact-info:hover {
   transform: scale(1.05);
-  background-color: var(--btn-hover-bg-color); /* Couleur cohérente au survol */
+  background-color: var(--btn-hover-bg-color);
 }
 
-.contact-info > h2 {
+.contact-info > h2,
+.contact-info > p {
   color: var(--btn-text-color);
   margin-bottom: 20px;
 }
 
-.contact-info > p {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  color: var(--btn-text-color);
-  margin-block: 5px;
-}
-
-.contact-info p > i {
-  font-size: 18px;
-}
-
-.contact-info:hover h2,
-.contact-info:hover p,
-.contact-info:hover i {
-  color: var(--btn-text-color);
-  z-index: 2;
-}
-
-/* ----- CONTACT FORMULAIRE ----- */
+/* ----- FORMULAIRE DE CONTACT ----- */
 .form-control {
   display: flex;
   flex-direction: column;
@@ -839,6 +814,7 @@ h3 {
   display: flex;
   gap: 10px;
   width: 100%;
+  box-shadow: 1px 8px 10px 2px var(--shadow-color);
 }
 
 .input-field {
@@ -872,13 +848,57 @@ textarea {
 }
 
 .form-button > .btn:hover {
-  background: var(--btn-hover-bg-color); /* Couleur cohérente au survol */
+  background: var(--btn-hover-bg-color);
 }
 
 .form-button i {
   font-size: 18px;
   transform: rotate(-45deg);
 }
+
+/* ----- PAGE MERCI ----- */
+.merci-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: var(--background-color);
+  color: var(--text-color-main);
+  text-align: center;
+  padding: 2em;
+}
+
+.merci-container h1 {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 1em;
+}
+
+.merci-container p {
+  font-size: 18px;
+  margin-bottom: 2em;
+}
+
+.merci-container .btn {
+  font-weight: 500;
+  padding: 10px 20px;
+  background: var(--btn-bg-color);
+  color: var(--btn-text-color);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px var(--shadow-color);
+  transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+  white-space: nowrap;
+}
+
+.merci-container .btn:hover {
+  background: var(--btn-hover-bg-color);
+  color: var(--btn-text-color);
+  box-shadow: 0 6px 8px var(--shadow-color);
+}
+
 
 
 /* ----- FORMULAIRE EN MODE SOMBRE ----- */
