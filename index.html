@@ -484,7 +484,7 @@
         <div class="row">
           <div class="col">
             <div class="contact-info">
-              <h2>Trouve moi sur <i class="uil uil-corner-right-down"></i></h2>
+              <h2>Trouvez-moi sur <i class="uil uil-corner-right-down"></i></h2>
               <p><i class="uil uil-envelope"></i> Email: stark.kassa@gmail.com</p>
               <p><i class="uil uil-phone"></i> Tel: +33 07 89 32 92 57</p>
             </div>
@@ -492,7 +492,8 @@
           <div class="col">
             <!-- FORMULAIRE DE CONTACT -->
             <div class="form-control">
-              <form name="contact" method="POST" data-netlify="true" onsubmit="handleSubmit(event)">
+              <form name="contact" method="POST" data-netlify="true" action="/merci">
+                <input type="hidden" name="form-name" value="contact">
                 <div class="form-inputs">
                   <input type="text" class="input-field" name="nom" placeholder="Nom" required>
                   <input type="email" class="input-field" name="email" placeholder="Email" required>
@@ -505,14 +506,11 @@
                 </div>
               </form>
             </div>
-            <!-- MESSAGE DE SUCCÈS APRÈS SOUMISSION -->
-            <div id="success-message" style="display: none;">
-              <h2>Merci pour votre message !</h2>
-              <p>Votre message a été envoyé avec succès.</p>
-            </div>
           </div>
         </div>
       </section>
+
+
 
 
       <!-- --------------- FOOTER --------------- -->
