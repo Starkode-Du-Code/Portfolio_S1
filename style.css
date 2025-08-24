@@ -1,18 +1,21 @@
 /* ----- VARIABLES ----- */
 :root {
   --body-color: #FFFFFF;
-  --text-color-main: #2E5A88; /* Bleu acier */
+  --text-color-main: #1A1A1A; /* Noir professionnel */
   --text-color-secondary: #555555;
   --background-color: #FFFFFF;
   --primary-color: #FF6B35; /* Orange chantier */
   --primary-color-hover: #E55A2B;
   --secondary-color: #2E5A88; /* Bleu acier */
-  --smart-building-gradient: linear-gradient(135deg, #FF6B35 0%, #2E5A88 100%);
+  --smart-building-gradient: linear-gradient(135deg, #FF6B35 0%, #2E5A88 50%, #1A472A 100%);
   --shadow-color: rgba(0, 0, 0, 0.1); /* Ombre légère noire */
   --font-family: 'Merriweather', serif;
   --btn-bg-color: var(--primary-color);
   --btn-text-color: var(--background-color);
   --btn-hover-bg-color: var(--primary-color-hover);
+  --construction-green: #1A472A; /* Vert construction */
+  --steel-blue: #2E5A88; /* Bleu acier */
+  --safety-orange: #FF6B35; /* Orange sécurité */
 }
 
 /* ----- VARIABLES POUR LE MODE SOMBRE ----- */
@@ -210,7 +213,7 @@ nav {
 .featured-name h1 {
   font-size: 48px;
   font-weight: 700;
-  color: var(--secondary-color);
+  color: var(--text-color-main);
   margin-bottom: 10px;
   line-height: 1.2;
 }
@@ -218,7 +221,7 @@ nav {
 .smart-building-title {
   font-size: 32px;
   font-weight: 600;
-  background: var(--smart-building-gradient);
+  background: linear-gradient(135deg, #FF6B35 0%, #2E5A88 50%, #1A472A 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -228,12 +231,12 @@ nav {
 
 @keyframes gradientShift {
   0%, 100% { 
-    background: linear-gradient(135deg, #FF6B35 0%, #2E5A88 100%);
+    background: linear-gradient(135deg, #FF6B35 0%, #2E5A88 50%, #1A472A 100%);
     -webkit-background-clip: text;
     background-clip: text;
   }
   50% { 
-    background: linear-gradient(135deg, #2E5A88 0%, #FF6B35 100%);
+    background: linear-gradient(135deg, #1A472A 0%, #2E5A88 50%, #FF6B35 100%);
     -webkit-background-clip: text;
     background-clip: text;
   }
@@ -247,19 +250,19 @@ nav {
 }
 
 .specialty-tag {
-  background: var(--smart-building-gradient);
+  background: linear-gradient(135deg, #FF6B35 0%, #2E5A88 100%);
   color: white;
   padding: 8px 16px;
   border-radius: 25px;
   font-size: 14px;
   font-weight: 600;
-  box-shadow: 0 4px 8px rgba(255, 107, 53, 0.3);
+  box-shadow: 0 4px 8px rgba(46, 90, 136, 0.3);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .specialty-tag:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 12px rgba(255, 107, 53, 0.4);
+  box-shadow: 0 6px 12px rgba(46, 90, 136, 0.4);
 }
 
 .animated-roles {
@@ -1073,12 +1076,12 @@ footer {
 }
 
 .smart-building-btn {
-  background: var(--smart-building-gradient);
+  background: linear-gradient(135deg, #FF6B35 0%, #2E5A88 100%);
   color: white;
   font-weight: 600;
   padding: 15px 25px;
   border-radius: 30px;
-  box-shadow: 0 6px 20px rgba(255, 107, 53, 0.4);
+  box-shadow: 0 6px 20px rgba(46, 90, 136, 0.3);
   transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
@@ -1101,7 +1104,7 @@ footer {
 
 .smart-building-btn:hover {
   transform: translateY(-3px);
-  box-shadow: 0 8px 25px rgba(255, 107, 53, 0.6);
+  box-shadow: 0 8px 25px rgba(46, 90, 136, 0.5);
 }
 /* ----- ICONES ----- */
 i {
