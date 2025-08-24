@@ -27,7 +27,14 @@ function headerShadow() {
 
 /* ----- EFFET DE TYPOGRAPHIE DYNAMIQUE AVEC TYPED.JS ----- */
 var typed = new Typed(".typedText", {
-  strings: ["Développeur", "Étudiant", "Passionné"],
+  strings: [
+    "Ingénieur Smart Building", 
+    "Développeur BTP", 
+    "Spécialiste BIM", 
+    "Consultant IoT", 
+    "Expert GTB/GTC",
+    "Analyste Data Construction"
+  ],
   typeSpeed: 100,   // Vitesse de frappe (plus élevé = plus lent)
   backSpeed: 80,    // Vitesse d'effacement (plus élevé = plus lent)
   backDelay: 2000,  // Délai avant l'effacement (en millisecondes)
